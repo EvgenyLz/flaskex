@@ -1,1 +1,8 @@
-
+Приложение не запускается из-за ошибки в файле forms.py. В WTforms используется InputRequired в обязательных полях.
+Приложение упаковано в Docker, Dockerfile прилагается:
+- docker build . --tag flaskex (упаковка)
+- docker run -t flaskex (запуск), ctrl+c (остановка)
+Файл docker-compose.yaml для запуска приложения также прилагается:
+- docker-compose up -d --build (упаковка и запуск)
+- docker-compose up -d (запуск)
+- docker-compose down (остановка)
